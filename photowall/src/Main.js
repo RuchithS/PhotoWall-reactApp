@@ -26,7 +26,7 @@ class Main extends Component{
       console.log(postRemoved)
       this.setState((state) => ({
         posts: state.posts.filter((post) =>
-        post!=postRemoved)
+        post!==postRemoved)
       }))
     }
     render(){
