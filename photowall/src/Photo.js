@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types"
 
 function Photo (props){
     const post = props.post
@@ -15,5 +16,8 @@ function Photo (props){
             </div>
         </figure>
     )
+}
+Photo.propTypes = {
+    post: PropTypes.array.isRequired
 }
 export default Photo;
